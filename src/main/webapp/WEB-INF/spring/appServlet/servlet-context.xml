@@ -26,13 +26,14 @@
 
 	<context:component-scan base-package="org.zerock.controller" />
 
+	<!-- File Upload && Download -->
 	<beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<beans:property name="maxUploadSize" value="10485760"></beans:property>
 	</beans:bean>
 
 	<beans:bean id="uploadPath" class="java.lang.String">
-		<beans:constructor-arg value="C:\\zzz\\upload">
+		<beans:constructor-arg value="C:\\upload">
 		</beans:constructor-arg>
 	</beans:bean>
 
@@ -43,23 +44,22 @@
 	<beans:bean id="loginInterceptor" class="org.zerock.interceptor.LoginInterceptor"></beans:bean>
 
 	<interceptors>
-	
+
 		<interceptor>
 			<mapping path="/user/loginPost" />
 			<beans:ref bean="loginInterceptor" />
 		</interceptor>
-		
-	  
- 	  <interceptor>
-	    <mapping path="/sboard/register"/>
-	    <mapping path="/sboard/modifyPage"/>
-	    <mapping path="/sboard/removePage"/>
-	    <beans:ref bean="authInterceptor"/>
-	  </interceptor>	
-	  		
+
+		<interceptor>
+			<mapping path="/sboard/register" />
+			<mapping path="/sboard/modifyPage" />
+			<mapping path="/sboard/removePage" />
+			<beans:ref bean="authInterceptor" />
+		</interceptor>
+
 	</interceptors>
-	
-	
+
+
 
 	<!-- <interceptor> <mapping path="/doA"/> <mapping path="/doB"/> <beans:ref 
 		bean="sampleInterceptor"/> </interceptor> -->
