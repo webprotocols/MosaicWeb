@@ -25,8 +25,8 @@
 	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
 	rel="stylesheet" type="text/css" />
 <!-- Theme style -->
-<link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet"
-	type="text/css" />
+<link href="/resources/dist/css/AdminLTE.css" rel="stylesheet"
+	type="text/css" />	
 <!-- AdminLTE Skins. Choose a skin from the css/skins 
      folder instead of downloading all of them to reduce the load. -->
 <link href="/resources/dist/css/skins/_all-skins.min.css"
@@ -456,8 +456,9 @@
 		</aside>
 
 		<!-- Content Wrapper. Contains page content -->
-		<div class="content-wrapper">
-			<section class="content">
+		<div class="content-wrapper" style="border: 2px solid red;">
+		
+			<section class="content" style="border: 2px solid blue;">
 				<!-- ################## -->
 				<!-- START Main Content -->
 				<!-- ################## -->

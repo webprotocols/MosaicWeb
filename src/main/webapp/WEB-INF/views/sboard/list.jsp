@@ -6,6 +6,8 @@
 <html>
 <head>
 <title>list.jsp</title>
+<script type="text/javascript">
+</script>
 </head>
 <body>
 
