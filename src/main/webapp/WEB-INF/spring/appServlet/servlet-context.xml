@@ -27,6 +27,7 @@
 	</beans:bean>
 
 	<context:component-scan base-package="org.zerock.controller" />
+	<context:component-scan base-package="org.zerock.restcontroller" />
 
 	<!-- File Upload && Download -->
 	<beans:bean id="multipartResolver"
