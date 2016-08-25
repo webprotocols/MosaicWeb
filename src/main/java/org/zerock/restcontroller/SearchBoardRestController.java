@@ -8,8 +8,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -38,11 +40,16 @@ public class SearchBoardRestController {
 	}
 	
 	@RequestMapping(value = "/listAll", method=RequestMethod.GET)
-	public ResponseEntity<String> listAll(Criteria cri, HttpServletResponse response) throws Exception {
-		logger.info(cri.toString());
-		response.setContentType("application/json");
+	public ResponseEntity<String> listAll(HttpServletResponse response) throws Exception {
+//		logger.info(cri.toString());
+//		response.setContentType("application/json");
+		HttpHeaders headers = new HttpHeaders();
+	    headers.add("Content-Type", "application/json; charset=UTF-8");
+	    
+		ResponseEntity<String> xx = new ResponseEntity<String>("SUCCESS", headers, HttpStatus.OK);
 		
-		return new ResponseEntity<String>("SUCCESS", HttpStatus.OK);
+//		return xx;
+		return ResponseEntity.ok().header("Content-Type", "application/json; charset=UTF-8").body("SUCCESS");
 	}
 	
 	
