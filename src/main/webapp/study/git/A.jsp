@@ -13,5 +13,12 @@
 <body>
 <h1>A.jsp</h1>
 
+<ol>
+	<li>java</li>
+	<li>javascript</li>
+	<li>css</li>
+	<li>html</li>
+</ol>
+
 </body>
 </html>
