@@ -14,10 +14,10 @@
 <h1>A.jsp</h1>
 
 <ol>
-	<li>java</li>
-	<li>javascript</li>
-	<li>css</li>
-	<li>html</li>
+	<li>java22</li>
+	<li>javascript22</li>
+	<li>css22</li>
+	<li>html22</li>
 </ol>
 
 </body>
