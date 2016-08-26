@@ -13,5 +13,12 @@
 <body>
 <h1>A.jsp</h1>
 
+<ul>
+	<li>spring</li>
+	<li>mybatis</li>
+	<li>jQuery</li>
+	<li>Bootstrap</li>
+</ul>
+
 </body>
 </html>
