@@ -462,7 +462,9 @@
 				<!-- ################## -->
 				<!-- START Main Content -->
 				<!-- ################## -->
+				<div class="container-fluid">
 				<sitemesh:write property="body" />
+				</div>
 				<!-- ################## -->
 				<!-- END   Main Content -->
 				<!-- ################## -->
